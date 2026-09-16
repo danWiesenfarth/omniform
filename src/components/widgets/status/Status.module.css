@@ -1,0 +1,41 @@
+.status-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  gap: 0.25rem;
+}
+
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Small viewport: 3 items */
+.status-list li:nth-child(n + 6) {
+  display: none;
+}
+
+/* Large viewport: 5 items */
+@media (min-height: 900px) {
+  .status-list li:nth-child(n + 4) {
+    display: flex;
+  }
+
+  .status-list li:nth-child(n + 7) {
+    display: none;
+  }
+}
+@media (min-height: 1080px) {
+  .status-list li:nth-child(n + 6) {
+    display: flex;
+  }
+
+  .status-list li:nth-child(n + 8) {
+    display: none;
+  }
+}

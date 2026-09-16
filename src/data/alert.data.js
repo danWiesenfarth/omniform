@@ -1,0 +1,60 @@
+import { CircleAlert, OctagonAlert, Check, Info } from 'lucide-react';
+
+export const ALERTS = [
+  {
+    id: 1,
+    icon: OctagonAlert,
+    iconColor: 'var(--red)',
+    title: 'Machine 04',
+    description: 'Temperature above threshold',
+    timestamp: '2min ago',
+  },
+  {
+    id: 2,
+    icon: CircleAlert,
+    iconColor: 'var(--peach)',
+    title: 'Material Shortage',
+    description: 'Component X-987',
+    timestamp: '8min ago',
+  },
+  {
+    id: 3,
+    icon: Info,
+    iconColor: 'var(--sky)',
+    title: 'Production Resumed',
+    description: 'Production Line 5',
+    timestamp: '16min ago',
+  },
+  {
+    id: 4,
+    icon: Check,
+    iconColor: 'var(--green)',
+    title: 'Order IC-15413',
+    description: 'Order completed',
+    timestamp: '20min ago',
+  },
+  {
+    id: 4,
+    icon: Check,
+    iconColor: 'var(--green)',
+    title: 'Order IC-15413',
+    description: 'Order completed',
+    timestamp: '20min ago',
+  },
+  {
+    id: 4,
+    icon: Check,
+    iconColor: 'var(--green)',
+    title: 'Order IC-15413',
+    description: 'Order completed',
+    timestamp: '20min ago',
+  },
+  {
+    id: 4,
+    icon: Check,
+    iconColor: 'var(--green)',
+    title: 'Order IC-15413',
+    description: 'Order completed',
+    timestamp: '20min ago',
+  },
+];

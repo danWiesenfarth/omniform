@@ -1,0 +1,10 @@
+.theme-toggle {
+  all: unset;
+  background-color: none;
+  padding: 8px;
+  border-radius: 10px;
+}
+.theme-toggle:hover {
+  background-color: var(--base);
+  cursor: pointer;
+}

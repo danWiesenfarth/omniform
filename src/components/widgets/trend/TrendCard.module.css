@@ -1,0 +1,19 @@
+.trend-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 8px 16px 8px 16px;
+}
+.value {
+  color: var(--subtext-1);
+  font-family: 'Fira Mono';
+
+  font-size: 1rem;
+}
+
+.kpi-value {
+  font-size: 1.25rem;
+  font-family: 'Fira Mono';
+  font-weight: 700;
+  color: var(--green);
+}

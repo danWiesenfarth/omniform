@@ -1,0 +1,25 @@
+.alert-item-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 12px;
+  border-radius: 10px;
+  transition: background-color 200ms ease;
+}
+
+.alert-item-wrapper:hover {
+  background-color: var(--base);
+  cursor: pointer;
+}
+.alert-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.timestamp {
+  font-family: 'Fira Mono';
+  color: var(--subtext-0);
+}

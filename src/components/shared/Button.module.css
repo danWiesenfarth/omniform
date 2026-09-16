@@ -1,0 +1,17 @@
+.button-primary {
+  all: unset;
+  background-color: var(--base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background-color 200ms ease;
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  background-color: var(--surface-0);
+}

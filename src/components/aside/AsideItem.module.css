@@ -1,0 +1,93 @@
+.item {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+/* Main navigation items */
+.item > a,
+.item > button {
+  all: unset;
+  box-sizing: border-box;
+
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 16px;
+
+  display: flex;
+  align-items: center;
+
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+/* Only dropdown items push the chevron to the right */
+.item > button {
+  justify-content: space-between;
+}
+
+/* Hover state - only for non-selected items */
+.item > a:not(.selected):hover,
+.item > button:not(.selected):hover {
+  background-color: var(--base);
+}
+
+/* Selected state */
+.item > a.selected,
+.item > button.selected {
+  background-color: var(--surface-0);
+}
+
+/* Icon + title */
+.item-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Main navigation icons */
+.item-content svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Chevron */
+.item > button > svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* Subpage container */
+.subpages {
+  margin: 4px 0 0;
+  padding: 0 0 0 16px;
+}
+
+/* Individual subpage */
+.subpages li {
+  list-style: none;
+  min-height: 40px;
+  margin: 0;
+}
+
+/* Subpage links */
+.subpages li a {
+  all: unset;
+  box-sizing: border-box;
+
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 16px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+/* Subpage hover */
+.subpages li a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+.alerts-list {
+  min-height: 0;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* Small viewport: 3 items */
+.alerts-list li:nth-child(n + 5) {
+  display: none;
+}
+
+/* Large viewport: 5 items */
+@media (min-height: 900px) {
+  .alerts-list li:nth-child(n + 4) {
+    display: list-item;
+  }
+
+  .alerts-list li:nth-child(n + 6) {
+    display: none;
+  }
+}

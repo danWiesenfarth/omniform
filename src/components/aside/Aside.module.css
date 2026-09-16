@@ -1,0 +1,12 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 260px;
+}
+
+.divider {
+  height: 1px;
+  background-color: var(--base);
+  margin: 12px 12px;
+}
