@@ -4,11 +4,11 @@
 
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0rem;
 }
 
 /* Small viewport: 3 items */
-.alerts-list li:nth-child(n + 5) {
+.alerts-list li:nth-child(n + 6) {
   display: none;
 }
 
