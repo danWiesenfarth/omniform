@@ -18,7 +18,7 @@ export const PRODUCTION_ORDERS = [
     due: '14:30',
     status: {
       type: 'warning',
-      label: 'On Hold',
+      label: 'Hold',
     },
   },
   {
@@ -29,7 +29,7 @@ export const PRODUCTION_ORDERS = [
     due: '14:30',
     status: {
       type: 'warning',
-      label: 'On Hold',
+      label: 'Hold',
     },
   },
   {

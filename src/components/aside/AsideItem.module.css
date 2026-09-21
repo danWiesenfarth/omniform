@@ -91,3 +91,46 @@
   color: var(--text);
   text-decoration: underline;
 }
+
+/* -------------------------------- */
+/* Mobile                          */
+/* -------------------------------- */
+
+@media (max-width: 768px) {
+  .item {
+    margin-bottom: 4px;
+  }
+
+  .item > a,
+  .item > button {
+    min-height: 44px;
+    padding: 10px 12px;
+  }
+
+  .item-content {
+    gap: 0.625rem;
+  }
+
+  .item-content svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .item > button > svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .subpages {
+    padding-left: 12px;
+  }
+
+  .subpages li {
+    min-height: 40px;
+  }
+
+  .subpages li a {
+    min-height: 40px;
+    padding: 8px 12px;
+  }
+}

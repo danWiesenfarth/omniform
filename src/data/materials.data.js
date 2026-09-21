@@ -40,7 +40,7 @@ export const MATERIALS = [
     unit: 'pcs',
     status: {
       type: 'warning',
-      label: 'Low Stock',
+      label: 'Low',
     },
   },
   {

@@ -9,10 +9,10 @@ import { QUALITY } from '../../../data/quality.data';
 import { MATERIAL_COLUMNS } from '../../../data/columns/materialColumns.data';
 import { MATERIALS } from '../../../data/materials.data';
 
-const TABS = ['Production Orders', 'Downtime', 'Quality', 'Materials'];
+const TABS = ['Production', 'Downtime', 'Quality', 'Materials'];
 
 export default function TabTable() {
-  const [activeTab, setActiveTab] = useState('Production Orders');
+  const [activeTab, setActiveTab] = useState('Production');
 
   return (
     <article className='tab-card'>
@@ -30,7 +30,7 @@ export default function TabTable() {
         ))}
       </nav>
 
-      {activeTab === 'Production Orders' && <ProductionOrders />}
+      {activeTab === 'Production' && <ProductionOrders />}
 
       {activeTab === 'Downtime' && (
         <DataTable columns={DOWNTIME_COLUMNS} data={DOWNTIME} />

@@ -1,4 +1,4 @@
-aside {
+.aside {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -8,5 +8,23 @@ aside {
 .divider {
   height: 1px;
   background-color: var(--base);
-  margin: 12px 12px;
+  margin: 12px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .aside {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .divider {
+    margin: 8px 12px;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

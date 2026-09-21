@@ -3,7 +3,7 @@
   padding: 16px;
   overflow: hidden;
   background-color: var(--mantle);
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 table {
@@ -16,13 +16,16 @@ table {
 th {
   padding-top: 12px;
   padding-bottom: 12px;
+
   color: var(--subtext-0);
+
   font-family: 'Fira Mono';
-  font-size: 1rem;
-  font-weight: 500;
-  text-align: left;
   font-size: 16px;
+  font-weight: 500;
+
+  text-align: left;
   text-transform: uppercase;
+
   border-bottom: 1px solid var(--surface-0);
 }
 
@@ -36,7 +39,7 @@ td:last-child {
   text-align: right;
 }
 
-/* Column proportions */
+/* ---------- Column proportions ---------- */
 
 th:nth-child(1),
 td:nth-child(1) {
@@ -61,4 +64,61 @@ td:nth-child(4) {
 th:nth-child(5),
 td:nth-child(5) {
   width: 20%;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 767px) {
+  .tableWrapper {
+    height: calc(100% - 44px);
+    padding: 12px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    width: 650px;
+    min-width: 650px;
+    height: auto;
+  }
+
+  th {
+    padding: 10px 8px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 25%;
+  }
+
+  th:nth-child(2),
+  td:nth-child(2) {
+    width: 20%;
+  }
+
+  th:nth-child(3),
+  td:nth-child(3) {
+    width: 15%;
+  }
+
+  th:nth-child(4),
+  td:nth-child(4) {
+    width: 20%;
+  }
+
+  th:nth-child(5),
+  td:nth-child(5) {
+    width: 20%;
+  }
 }

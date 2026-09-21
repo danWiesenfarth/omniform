@@ -1,5 +1,6 @@
 .tableWrapper {
   height: calc(100% - 49px);
+  width: 100%;
   padding: 16px;
   overflow: hidden;
   background-color: var(--mantle);

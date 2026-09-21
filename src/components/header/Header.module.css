@@ -43,3 +43,109 @@
 input {
   all: unset;
 }
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .header-main {
+    margin: 1rem 0;
+  }
+
+  .header-left {
+    gap: 0rem;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .user > span:not(.user-pfp) {
+    display: none;
+  }
+
+  .user {
+    gap: 1rem;
+  }
+
+  .user-pfp {
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+  }
+
+  .menu-button span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--subtext-0);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+  }
+
+  .mobile-menu-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 40%);
+  }
+
+  .mobile-menu-panel {
+    position: relative;
+    width: min(85vw, 360px);
+    height: 100%;
+    padding: 1.5rem;
+    background: var(--base);
+  }
+
+  .mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .mobile-menu-header button {
+    border: 0;
+    background: none;
+    color: var(--text);
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+
+  .mobile-menu-panel nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .mobile-menu-panel nav a {
+    padding: 0.75rem 0;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .mobile-menu-panel nav hr {
+    width: 100%;
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid var(--surface-1);
+  }
+}

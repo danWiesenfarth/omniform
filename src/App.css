@@ -30,6 +30,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 100dvh;
+  width: 100dvw;
 }
 
 .dash-grid {
@@ -76,6 +77,13 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: 767px) {
+  .trends-card {
+    height: 500px;
+  }
+}
+
 .status-card {
   grid-area: status;
 
@@ -100,4 +108,58 @@ main {
   height: 100%;
   min-height: 0;
   gap: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  main {
+    height: auto;
+    min-height: 100dvh;
+  }
+
+  .dashboard-content {
+    flex-direction: column;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .dash-grid {
+    height: auto;
+    display: grid;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+
+    grid-template-areas:
+      'trends'
+      'alerts'
+      'status'
+      'tab';
+
+    gap: 0.5rem;
+  }
+
+  .trends-card,
+  .tab-card,
+  .alerts-card,
+  .status-card {
+    min-height: 300px;
+    min-width: 0;
+  }
+}
+
+.button-menu-panel {
+  all: unset;
+  background-color: var(--base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background-color 200ms ease;
+}
+.button-menu-panel:hover {
+  cursor: pointer;
+  background-color: var(--surface-0);
 }
